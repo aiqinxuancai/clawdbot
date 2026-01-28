@@ -1,0 +1,38 @@
+﻿{
+  "name": "@clawdbot/onebot",
+  "version": "2026.1.25",
+  "type": "module",
+  "description": "Clawdbot OneBot 12 channel plugin (QQ bots)",
+  "clawdbot": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "channel": {
+      "id": "onebot",
+      "label": "QQ (OneBot 12)",
+      "selectionLabel": "QQ (OneBot 12)",
+      "docsPath": "/channels/onebot",
+      "docsLabel": "onebot",
+      "blurb": "OneBot 12 protocol for QQ bots over WebSocket.",
+      "order": 85,
+      "quickstartAllowFrom": true,
+      "aliases": [
+        "qq",
+        "onebot12",
+        "onebot-12"
+      ]
+    },
+    "install": {
+      "npmSpec": "@clawdbot/onebot",
+      "localPath": "extensions/onebot",
+      "defaultChoice": "npm"
+    }
+  },
+  "dependencies": {
+    "ws": "^8.19.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "clawdbot": "workspace:*"
+  }
+}

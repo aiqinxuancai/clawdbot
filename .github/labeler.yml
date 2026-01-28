@@ -50,6 +50,11 @@
       - any-glob-to-any-file:
           - "extensions/nostr/**"
           - "docs/channels/nostr.md"
+"channel: onebot":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "extensions/onebot/**"
+          - "docs/channels/onebot.md"
 "channel: signal":
   - changed-files:
       - any-glob-to-any-file:
